@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="temperature.js"></script>
+<script>
+    let roomTemperature = new Temperature(25);
+    let html = `Nhiệt độ: ${roomTemperature.C} độ C. <br>`;
+    html += `Tương đương: ${roomTemperature.toFarenheit()} độ F<br>`;
+    html += `Tương đương: ${roomTemperature.toKenvin()} độ K<br>`;
+    document.write(html);
+
+</script>
+</body>
+</html>
